@@ -3,9 +3,12 @@ layout: post
 author: Harika Kanthi
 title: Top basic questions asked from SQL
 date: 2020-07-01T11:57:40.123Z
-thumbnail: /assets/img/posts/code.jpg
+thumbnail-img: /assets/img/posts/money-4029562_640.png
 category: SQL
 summary: Basics Information In SQL
+keywords: sql
+thumbnail: /assets/img/posts/code.jpg
+permalink: /blog/top-basic-questions-asked-from-sql
 ---
 # **Basics Information In SQL**
 
@@ -439,9 +442,11 @@ Select studentID from student. <strong>INTERSECT </strong> Select StudentID from
 Records can be fetched for both Odd and Even row numbers -.
 
 To display even numbers-.
+
 ```sql
 Select studentId from (Select rowno, studentId from student) where mod(rowno,2)=0
 ```
+
 To display odd numbers-.
 
 ```sql
@@ -449,6 +454,7 @@ Select studentId from (Select rowno, studentId from student) where mod(rowno,2)=
 
 from (Select rowno, studentId from student) where mod(rowno,2)=1.\[/sql]
 ```
+
 **48. How to select unique records from a table?**
 
 Select unique records from a table by using DISTINCT keyword.
@@ -460,11 +466,13 @@ Name from Student.
 **49. What is the command used to fetch first 5 characters of the string?**
 
 There are many ways to fetch first 5 characters of the string -.
+
 ```sql
 Select SUBSTRING(Student_Name,1,5) as student_name from student
 
 Select LEFT(Student_name,5) as student_name from student
 ```
+
 **50. Which operator is used in query for pattern matching?**
 
 LIKE operator is used for pattern matching, and it can be used as -.
@@ -472,7 +480,8 @@ LIKE operator is used for pattern matching, and it can be used as -.
 1. % - Matches zero or more characters.
 2. _(Underscore) – Matching exactly one character.
 
-**Example -.**
+**Example -**
+
 ```sql
 Select * from Student where student_name like 'a%'
 
